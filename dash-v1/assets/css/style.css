@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    box-shadow: none;
+}
+:root{
+    --bg-main: #283046;
+    --bg-second: #161d31;
+    --text-main: #ebebeb;
+    --bg-third: #12E066;
+    --bg-red: #ff0800;
+}
+.bg-main {
+    background: var(--bg-main);
+}
+.bg-second {
+    background: var(--bg-second);
+}
+.bg-second-transparent {
+    background: rgba(235, 235, 235, 0.2);
+}
+.text-main {
+    color: var(--text-main);
+}
+.text-green { 
+    color: var(--bg-third);
+}
+.bg-third {
+    background: var(--bg-third);
+}
+.bg-red {
+    background: var(--bg-red);
+}
+.font {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* sidebar */
+#sidebar {
+    transition: ease-in-out all .3s;
+    z-index: 9999;
+}
+#sidebar span {
+    opacity: 0;
+    position: absolute;
+    transition: ease-in-out all .1s;
+}
+#sidebar:hover {
+    width: 150px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    display: flex;
+}
+
+#sidebar:hover span {
+    opacity: 1;
+}
+
+.hover-menu {
+    
+    transition: ease-in-out .3s;
+}
+.hover-menu:hover {
+    transform: translateX(1rem);
+}
+
+#form-field2 {
+    background: var(--bg-main);
+}
+.bar {
+    display: inline-block; /* Permite que o span tenha largura e altura definidas */
+    width: 3px; /* Largura do retângulo */
+    height: 36px;
+    background: var(--bg-main);
+}
+.edit-card {
+    transition: ease-in-out .3s;
+    max-height: 24px;
+}
+.edit-card:hover {
+    transform: scaleX(1.1);
+}
+.edit-card a:hover {
+    background: var(--bg-third);
+    border-radius: 0.25rem;
+}
+
+.modal {
+    background-color: rgba(22, 21, 21, 0.7);
+    display: none;
+    transition: ease-in-out .3s;
+}
+.button {
+    transition: ease-in-out .3s;
+}
+.button:hover {
+    transform: scaleY(1.15);
+}
+
+
